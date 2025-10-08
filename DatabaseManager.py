@@ -25,8 +25,9 @@ class excelManager:
 
         self.__data = pandas.concat([self.__data, pandas.DataFrame([newData])], ignore_index=True)
 
-        if (saveChange): self.saveChange()
-        pass
+        if (saveChange): 
+            self.saveChange()
+
         
     def deleteData(self, targetedNim:str,saveChange:bool=False):
         # kerjakan disini
